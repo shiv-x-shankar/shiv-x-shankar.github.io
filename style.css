@@ -333,6 +333,14 @@ h1, h2, h3, h4 {
   66%       { transform: translate(-18px, 28px) scale(0.97); }
 }
 
+#neuralCanvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
 .grid-lines {
   position: absolute;
   inset: 0;
@@ -444,6 +452,7 @@ h1, h2, h3, h4 {
   gap: 14px;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 2rem;
 }
 
 /* Stats bar */
