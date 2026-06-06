@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shiv Shankar · ML Engineer & Technology Strategist</title>
+  <meta name="description" content="Senior Software Engineer specializing in AI/ML systems, vector search, and distributed infrastructure. UC Berkeley EECS. Open to senior roles and VC partnerships.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner container">
+      <a href="#" class="nav-logo">SS</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#experience" class="mobile-link">Experience</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#contact" class="mobile-link">Let's Talk</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-lines"></div>
+      <canvas id="neuralCanvas"></canvas>
+    </div>
+
+    <div class="container hero-container">
+      <div class="hero-text">
+
+        <h1 class="hero-name">
+          Shiv <span class="name-accent">Shankar</span>
+        </h1>
+
+        <div class="hero-tagline">
+          <span class="tagline-prefix">&nbsp;</span>
+          <span class="tagline-dynamic" id="dynamicText"></span>
+          <span class="tagline-cursor">|</span>
+        </div>
+
+        <p class="hero-sub">
+          Data Engineering &middot; Backend Development &middot; Machine Learning 
+        </p>
+
+        <div class="hero-actions">
+          <a href="#experience" class="btn-hero-cta">
+            View My Work
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-cue">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-label">About</div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <h2 class="section-title">Engineering Intelligence.</h2>
+          <p class="body-text">I build backend systems at scale — from RAG pipelines to distributed ETL systems processing millions of records in real time.</p>
+          <p class="body-text">Beyond engineering, I'm actively exploring the intersection of technology and capital. Cross-domain experience across enterprise databases, supply chain analytics, and applied ML.</p>
+          <p class="body-text">When I'm not coding, I'm usually tinkering with algorithmic trading, playing sports, music, writing, or keeping up with emerging AI trends!</p>
+          <div class="social-row">
+            <a href="https://github.com/ShivShankar1234" target="_blank" rel="noopener" class="social-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/shiv--shankar/" target="_blank" rel="noopener" class="social-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <div class="expertise-grid">
+          <div class="exp-card reveal">
+            <div class="exp-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+            </div>
+            <h3>AI / ML Systems</h3>
+            <p>RAG pipelines, vector search, NLP, architectures at production scale</p>
+          </div>
+          <div class="exp-card reveal">
+            <div class="exp-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+            </div>
+            <h3>Distributed Systems</h3>
+            <p>Kafka, Kubernetes, ElasticSearch, Redis — processing 100M+ documents at enterprise scale</p>
+          </div>
+          <div class="exp-card reveal">
+            <div class="exp-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3>Global Collaboration</h3>
+            <p>Cross-cultural teamwork with engineering teams across Germany, Canada, China, and India. Fluent in 4 languages — bridging ideas across time zones and borders.</p>
+          </div>
+          <div class="exp-card reveal">
+            <div class="exp-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <h3>Database Engineering</h3>
+            <p>Oracle, MongoDB, SQL/NoSQL, query optimization, schema design, index engineering</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section section-dark" id="experience">
+    <div class="container">
+      <div class="section-label">Experience</div>
+      <h2 class="section-title">Where I've Built</h2>
+      <div class="timeline">
+
+        <!-- Oracle -->
+        <div class="tl-item reveal">
+          <div class="tl-line-wrap">
+            <div class="tl-dot current"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-card">
+            <div class="tl-card-header">
+              <div>
+                <h3 class="role-title">Senior Software Engineer</h3>
+                <div class="company-name">Oracle, Inc. <span class="badge-current">Current</span></div>
+              </div>
+            </div>
+            <div class="tl-highlights">
+              <div class="tl-hl">
+                <span class="hl-tag ai">AI / RAG</span>
+                <p>Built SELECT AI (RAG-based natural language querying) on JSON columns — async schema precomputation pipeline to dynamically augment LLM context at query time, with tuned prompts for multivalue index predicates</p>
+              </div>
+              <div class="tl-hl">
+                <span class="hl-tag vector">Vector</span>
+                <p>Integrated Oracle AI Vector Search into MongoDB API, mapping semantic search semantics to native embedding-based retrieval on JSON data. Validated precision, scalability, and semantic performance.</p>
+              </div>
+              <div class="tl-hl">
+                <span class="hl-tag db">DB</span>
+                <p>Extended MongoDB aggregation pipeline ($filter, $group, system variables) and enhanced explain plan to surface Oracle SQL execution details, query plans, and index usage</p>
+              </div>
+            </div>
+            <div class="tl-tech">
+              <span>Oracle DB</span><span>MongoDB</span><span>Java</span><span>PL/SQL</span><span>Vector Search</span><span>RAG</span><span>LLM</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ventus -->
+        <div class="tl-item reveal">
+          <div class="tl-line-wrap">
+            <div class="tl-dot"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-card">
+            <div class="tl-card-header">
+              <div>
+                <h3 class="role-title">Software Engineer</h3>
+                <div class="company-name">Ventus Technologies</div>
+              </div>
+            </div>
+            <div class="tl-highlights">
+              <div class="tl-hl">
+                <span class="hl-tag cv">CV</span>
+                <p>Designed and optimized data center cooling systems using airflow simulations and open-source object tracking algorithms to analyze thermal patterns and improve fan efficiency</p>
+              </div>
+            </div>
+            <div class="tl-tech">
+              <span>Computer Vision</span><span>Object Tracking</span><span>Python</span><span>OpenCV</span><span>Thermal Simulation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tesla -->
+        <div class="tl-item reveal">
+          <div class="tl-line-wrap">
+            <div class="tl-dot"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-card">
+            <div class="tl-card-header">
+              <div>
+                <h3 class="role-title">Software Engineer</h3>
+                <div class="company-name">Tesla, Inc.</div>
+              </div>
+            </div>
+            <div class="tl-highlights">
+              <div class="tl-hl">
+                <span class="hl-tag scale">Data</span>
+                <p>Built Kafka ETL pipeline (producer-consumer, SQL CDC + K8s consumers) indexing <strong>300M+ documents</strong> to ElasticSearch — 15M+ weekly — for WARP, Tesla's in-house business analytics engine</p>
+              </div>
+              <div class="tl-hl">
+                <span class="hl-tag search">Search</span>
+                <p>Designed procurement search platform on ElasticSearch with custom query DSL, data mappings, and analyzers. Translated business requirements into performant, scalable search experiences.</p>
+              </div>
+              <div class="tl-hl">
+                <span class="hl-tag db">Cache</span>
+                <p>Designed distributed client-side Redis caching across multiple modules using cache-aside and write-through strategies; facilitated API integrations for acquisitions and supplier onboarding</p>
+              </div>
+            </div>
+            <div class="tl-tech">
+              <span>Kafka</span><span>ElasticSearch</span><span>Kubernetes</span><span>Redis</span><span>SQL Server CDC</span><span>Java</span><span>Angular</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Brain Technologies -->
+        <div class="tl-item reveal">
+          <div class="tl-line-wrap">
+            <div class="tl-dot small"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-card tl-card-sm">
+            <div class="tl-card-header">
+              <div>
+                <h3 class="role-title">Machine Learning Intern</h3>
+                <div class="company-name">Brain Technologies Inc.</div>
+              </div>
+            </div>
+            <p class="tl-sm-text">Built NLP features for the Natural iOS app — multi-turn query handling, vague intent understanding, and goal tracking. Prototyped deep architecture for personalized basket recommendations using BERT Transformer models, slot filling, and GPT-3.</p>
+            <div class="tl-tech">
+              <span>BERT</span><span>GPT-3</span><span>NLP</span><span>Python</span><span>iOS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Barsky Lab -->
+        <div class="tl-item reveal">
+          <div class="tl-line-wrap">
+            <div class="tl-dot small"></div>
+          </div>
+          <div class="tl-card tl-card-sm">
+            <div class="tl-card-header">
+              <div>
+                <h3 class="role-title">Undergraduate Research Assistant</h3>
+                <div class="company-name">Barsky Lab, UC Berkeley</div>
+              </div>
+            </div>
+            <p class="tl-sm-text">Developed assistive computer vision technology for mouse-free navigation using hand gesture detection with Google Vision AI. Built an anti-shake filter using TensorFlow and OpenCV for stable, accurate cursor control.</p>
+            <div class="tl-tech">
+              <span>Google Vision AI</span><span>TensorFlow</span><span>OpenCV</span><span>Computer Vision</span><span>Python</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-label">Expertise</div>
+      <h2 class="section-title">Technology Stack</h2>
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">Languages</h3>
+          <div class="skill-chips">
+            <span class="chip primary">Python</span>
+            <span class="chip primary">Java</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">Go</span>
+            <span class="chip">SQL / PL/SQL</span>
+            <span class="chip">Scala</span>
+            <span class="chip">C / C++</span>
+            <span class="chip">C#</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">AI &amp; Machine Learning</h3>
+          <div class="skill-chips">
+            <span class="chip accent">PyTorch</span>
+            <span class="chip accent">TensorFlow</span>
+            <span class="chip accent">scikit-learn</span>
+            <span class="chip">RAG Systems</span>
+            <span class="chip">Vector Search</span>
+            <span class="chip">Transformers / BERT</span>
+            <span class="chip">Spark / pandas</span>
+            <span class="chip">numpy / scipy</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">Databases</h3>
+          <div class="skill-chips">
+            <span class="chip">Oracle DB</span>
+            <span class="chip">ElasticSearch</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">Redis</span>
+            <span class="chip">MS SQL Server</span>
+            <span class="chip">MySQL</span>
+            <span class="chip">ClickHouse</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">Infrastructure</h3>
+          <div class="skill-chips">
+            <span class="chip">Kafka</span>
+            <span class="chip">Kubernetes</span>
+            <span class="chip">AWS</span>
+            <span class="chip">.NET Core</span>
+            <span class="chip">Angular</span>
+            <span class="chip">Docker</span>
+            <span class="chip">Git</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section-dark" id="projects">
+    <div class="container">
+      <div class="section-label">Projects</div>
+      <h2 class="section-title">What I've Built</h2>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-tag-row"><span class="proj-tag ai">Deep Learning</span></div>
+          <h3>Deep Learning Architectures</h3>
+          <p>From-scratch implementations of AlexNet, ZFNet, ResNet, and GoogLeNet directly from original research papers. Pure TensorFlow — no high-level wrappers.</p>
+          <div class="proj-tech">
+            <span>TensorFlow</span><span>Python</span><span>CNN</span><span>Research</span>
+          </div>
+          <a href="https://github.com/ShivShankar1234/AlexNet" target="_blank" rel="noopener" class="proj-gh-link">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            View on GitHub
+          </a>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-tag-row"><span class="proj-tag ml">Generative AI</span></div>
+          <h3>Jazz Music Generator</h3>
+          <p>PixelCNN Decoder framework generating jazz music from MIDI samples converted into pitch-correlated pixel images — cross-modal generative modeling.</p>
+          <div class="proj-tech">
+            <span>PixelCNN</span><span>Python</span><span>MIDI</span><span>Generative</span>
+          </div>
+          <a href="https://github.com/ShivShankar1234/jazzCNN" target="_blank" rel="noopener" class="proj-gh-link">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            View on GitHub
+          </a>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-tag-row"><span class="proj-tag cloud">NLP / Search</span></div>
+          <h3>Limelight</h3>
+          <p>Keyword extraction pipeline for alternative text search — automatically surfaces semantically relevant terms from content to improve search precision and discoverability.</p>
+          <div class="proj-tech">
+            <span>Python</span><span>NLP</span><span>Text Processing</span>
+          </div>
+          <a href="https://github.com/ShivShankar1234/LimeLight" target="_blank" rel="noopener" class="proj-gh-link">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            View on GitHub
+          </a>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-tag-row"><span class="proj-tag systems">Multi-Agent RL</span></div>
+          <h3>Settlers of Catan AI</h3>
+          <p>Single and multi-agent policies using discrete-time Markov chains to minimize moves to win — expected hitting time properties guide optimal action selection.</p>
+          <div class="proj-tech">
+            <span>Python</span><span>Markov Chains</span><span>Multi-Agent</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-tag-row"><span class="proj-tag cloud">Cloud NLP</span></div>
+          <h3>YouTube QuickSearch</h3>
+          <p>Search YouTube video content by exact phrase — outputs precise timestamps and overall sentiment. Fully serverless on AWS Transcribe + Comprehend + S3.</p>
+          <div class="proj-tech">
+            <span>AWS S3</span><span>Transcribe</span><span>Comprehend</span><span>NLP</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-tag-row"><span class="proj-tag db">Algorithms</span></div>
+          <h3>Multidimensional R-Tree</h3>
+          <p>Immutable in-memory 2D spatial index optimized for geo-spatial query processing in Java. Currently extending to 3D geometric functionality.</p>
+          <div class="proj-tech">
+            <span>Java</span><span>Spatial Index</span><span>Algorithms</span>
+          </div>
+          <a href="https://github.com/ShivShankar1234/r-tree" target="_blank" rel="noopener" class="proj-gh-link">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            View on GitHub
+          </a>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-tag-row"><span class="proj-tag db">Graph Theory</span></div>
+          <h3>Steiner Tree TSP Approximation</h3>
+          <p>Graph-theoretic approximation algorithm for the NP-hard Traveling Salesman Problem using Steiner tree constructions — achieves bounded approximation ratio with provable guarantees.</p>
+          <div class="proj-tech">
+            <span>Python</span><span>Graph Theory</span><span>Algorithms</span>
+          </div>
+          <a href="https://github.com/ShivShankar1234/steiner_tree_tsp" target="_blank" rel="noopener" class="proj-gh-link">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            View on GitHub
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2025 Shiv Shankar</span>
+      <div class="footer-links">
+        <a href="https://github.com/ShivShankar1234" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/shiv--shankar/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:sshiv999@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
