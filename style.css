@@ -21,9 +21,11 @@
   --accent:      #22d3ee;
   --accent-dim:  rgba(34, 211, 238, 0.08);
 
-  --green:  #34d399;
-  --amber:  #fbbf24;
-  --purple: #a78bfa;
+  --green:     #34d399;
+  --green-dim: rgba(52, 211, 153, 0.08);
+  --amber:     #fbbf24;
+  --amber-dim: rgba(251, 191, 36, 0.08);
+  --purple:    #a78bfa;
 
   --text:   #e8edf8;
   --text-2: #8892b0;
@@ -863,6 +865,18 @@ h1, h2, h3, h4 {
   border-color: rgba(34, 211, 238, 0.22);
   color: var(--accent);
   background: var(--accent-dim);
+}
+
+.chip.accent-2 {
+  border-color: var(--green);
+  color: var(--green);
+  background: var(--green-dim);
+}
+
+.chip.accent-3 {
+  border-color: var(--amber);
+  color: var(--amber);
+  background: var(--amber-dim);
 }
 
 /* ─── PROJECTS ─── */
